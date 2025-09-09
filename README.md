@@ -1,6 +1,6 @@
 # Trip Analytics Stack
 
-## What the stack does
+## Introduction
 
 This Docker Compose stack analyzes trip data from a PostgreSQL database and generates summary statistics. The application connects to a PostgreSQL database containing trip records with city, duration, and fare information, then calculates total trips, average fares by city, and top cities by average trip duration. The results are written to both stdout and a JSON file in the output directory.
 
@@ -12,7 +12,7 @@ git clone https://github.com/mitaliyadav/5190-assignment1.git
 cd 5190-assignment1
 ```
 
-## Exact commands to run/stop
+## Run the following commands
 
 ### Run the stack:
 ```bash
@@ -61,15 +61,15 @@ This will clean the output directory, remove containers/volumes, and start fresh
   "top_by_minutes": [
     {
       "city": "San Francisco",
-      "avg_minutes": 19.5
+      "minutes": 19.5
     },
     {
       "city": "New York",
-      "avg_minutes": 17.5
+      "minutes": 17.5
     },
     {
       "city": "Charlotte",
-      "avg_minutes": 16.5
+      "minutes": 16.5
     }
   ]
 }
