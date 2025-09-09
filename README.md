@@ -4,6 +4,14 @@
 
 This Docker Compose stack analyzes trip data from a PostgreSQL database and generates summary statistics. The application connects to a PostgreSQL database containing trip records with city, duration, and fare information, then calculates total trips, average fares by city, and top cities by average trip duration. The results are written to both stdout and a JSON file in the output directory.
 
+## Getting Started
+
+### Clone the repository:
+```bash
+git clone https://github.com/mitaliyadav/5190-assignment1.git
+cd 5190-assignment1
+```
+
 ## Exact commands to run/stop
 
 ### Run the stack:
